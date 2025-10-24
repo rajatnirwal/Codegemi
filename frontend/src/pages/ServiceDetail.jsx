@@ -10,7 +10,6 @@ const services = [
   {
     id: 1,
     title: "Software Development",
-    slug: "software-development",
     icon: assets.SoftwareDevelopments_HOMEPAGEICON,
     image:
       "https://i.pinimg.com/1200x/d5/13/de/d513de574755719b537bb2d4f7e4a77d.jpg",
@@ -30,7 +29,6 @@ const services = [
   {
     id: 2,
     title: "Application Development",
-    slug: "application-development",
     icon: assets.ApplicationDevelopments_HOMEPAGEICON,
     image:
       "https://i.pinimg.com/736x/1b/4b/24/1b4b248ada4c022809e443a7d24020a2.jpg",
@@ -50,7 +48,6 @@ const services = [
   {
     id: 3,
     title: "RPA Workflow Automation",
-    slug: "rpa-workflow-automation",
     icon: assets.RPAICONServicePage,
     image:
       "https://i.pinimg.com/1200x/cd/a1/76/cda176a3ec6c4fd0eeb2b7b8dacbd0cb.jpg",
@@ -70,7 +67,6 @@ const services = [
   {
     id: 4,
     title: "Web Development",
-    slug: "web-development",
     icon: assets.WebDevelopments_HOMEPAGEICON,
     image:
       "https://i.pinimg.com/1200x/0f/bc/e0/0fbce0dcc3264b70c2aa30bb0aa36fbf.jpg",
@@ -90,7 +86,6 @@ const services = [
   {
     id: 5,
     title: "Graphic Design",
-    slug: "graphic-design",
     icon: assets.graphicdesignservicespage,
     image:
       "https://i.pinimg.com/1200x/bd/dd/2a/bddd2a086b0f4fedaf5fb5353aa70dd8.jpg",
@@ -110,7 +105,6 @@ const services = [
   {
     id: 6,
     title: "IT Management",
-    slug: "it-management",
     icon: assets.ITConsultingIcon,
     image:
       "https://i.pinimg.com/1200x/37/e1/89/37e189e31d55b76bb9b2c3bff26d5150.jpg",
@@ -130,7 +124,6 @@ const services = [
   {
     id: 7,
     title: "Digital Marketing",
-    slug: "digital-marketing",
     icon: assets.DigitalMarketingservicespage,
     image:
       "https://i.pinimg.com/736x/a5/da/25/a5da2594f7e7813aea7dffcbf17d108d.jpg",
@@ -150,7 +143,6 @@ const services = [
   {
     id: 8,
     title: "Data Analysis",
-    slug: "data-analysis",
     icon: assets.DataAnalyticsIcon,
     image:
       "https://i.pinimg.com/1200x/dd/4d/0d/dd4d0d8145da8a1cb7dad750ce5e2554.jpg",
@@ -170,7 +162,6 @@ const services = [
   {
     id: 9,
     title: "AI Solutions",
-    slug: "ai-solutions",
     icon: assets.AiSolutionservicepage,
     image:
       "https://i.pinimg.com/1200x/c4/e4/fa/c4e4fab939ab349fa4cd836b4b98e637.jpg",
@@ -190,7 +181,6 @@ const services = [
   {
     id: 10,
     title: "Data Science",
-    slug: "data-science",
     icon: assets.DataScienceservicepage,
     image:
       "https://i.pinimg.com/1200x/ab/b5/33/abb533741bcd9b568b61308b20d49673.jpg",
@@ -210,7 +200,6 @@ const services = [
   {
     id: 11,
     title: "Robotics",
-    slug: "robotics",
     icon: assets.RoboticesServicepage,
     image:
       "https://i.pinimg.com/1200x/61/4c/10/614c100caaa658a27f4fc48d1087529b.jpg",
@@ -230,7 +219,6 @@ const services = [
   {
     id: 12,
     title: "Drone Technologies",
-    slug: "drone-technologies",
     // No local icon/image found, keep original URLs
     icon: "https://cdn-icons-png.flaticon.com/512/3594/3594573.png",
     image:
@@ -251,9 +239,7 @@ const services = [
 ];
 
 const ServiceDetail = () => {
-  // const { id } = useParams();
-  const { slug } = useParams();
-
+  const { id } = useParams();
   const navigate = useNavigate();
 
   // Handle case where id might be undefined during initial render
@@ -261,8 +247,7 @@ const ServiceDetail = () => {
   const serviceId = id ? parseInt(id, 10) : null;
 
   // Find the service based on the ID
-  //const service = serviceId ? services.find((s) => s.id === serviceId) : null;
-  const service = services.find((s) => s.slug === slug);
+  const service = serviceId ? services.find((s) => s.id === serviceId) : null;
 
   if (!service) {
     return (

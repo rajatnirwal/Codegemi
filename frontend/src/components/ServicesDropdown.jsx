@@ -20,7 +20,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
   const icons = {
     1: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke="url(#softwareGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          stroke="url(#softwareGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="softwareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#FF6B6B" />
@@ -31,7 +37,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     2: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke="url(#appGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+          stroke="url(#appGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="appGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#4ECDC4" />
@@ -42,7 +54,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     3: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="url(#rpaGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+          stroke="url(#rpaGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="rpaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#FFD93D" />
@@ -53,7 +71,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     4: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke="url(#webGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+          stroke="url(#webGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#6BCF7F" />
@@ -64,7 +88,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     5: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke="url(#designGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+          stroke="url(#designGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="designGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#FF6B9D" />
@@ -75,7 +105,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     6: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" stroke="url(#itGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+          stroke="url(#itGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="itGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#9D50BB" />
@@ -86,9 +122,21 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     7: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke="url(#marketingGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+          stroke="url(#marketingGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
-          <linearGradient id="marketingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id="marketingGrad"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
             <stop offset="0%" stopColor="#FF7EB3" />
             <stop offset="100%" stopColor="#FF758C" />
           </linearGradient>
@@ -97,7 +145,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     8: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="url(#dataGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+          stroke="url(#dataGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#4A90E2" />
@@ -108,7 +162,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     9: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="url(#aiGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+          stroke="url(#aiGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#00C9FF" />
@@ -119,7 +179,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     10: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke="url(#scienceGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+          stroke="url(#scienceGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="scienceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#654EA3" />
@@ -130,7 +196,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     11: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" stroke="url(#roboticsGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
+          stroke="url(#roboticsGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="roboticsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#FF5F6D" />
@@ -141,7 +213,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
     ),
     12: (
       <svg className={className} viewBox="0 0 24 24" fill="none">
-        <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" stroke="url(#droneGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path
+          d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+          stroke="url(#droneGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         <defs>
           <linearGradient id="droneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#7F00FF" />
@@ -149,19 +227,27 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
           </linearGradient>
         </defs>
       </svg>
-    )
+    ),
   };
 
-  return icons[serviceId] || (
-    <svg className={className} viewBox="0 0 24 24" fill="none">
-      <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="url(#defaultGrad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <defs>
-        <linearGradient id="defaultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#667eea" />
-          <stop offset="100%" stopColor="#764ba2" />
-        </linearGradient>
-      </defs>
-    </svg>
+  return (
+    icons[serviceId] || (
+      <svg className={className} viewBox="0 0 24 24" fill="none">
+        <path
+          d="M13 10V3L4 14h7v7l9-11h-7z"
+          stroke="url(#defaultGrad)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <defs>
+          <linearGradient id="defaultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#667eea" />
+            <stop offset="100%" stopColor="#764ba2" />
+          </linearGradient>
+        </defs>
+      </svg>
+    )
   );
 };
 
@@ -173,7 +259,9 @@ export default function ServicesDropdown() {
         <h2 className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
           Our Services
         </h2>
-        <p className="text-gray-500 mt-2">Transform your business with our cutting-edge solutions</p>
+        <p className="text-gray-500 mt-2">
+          Transform your business with our cutting-edge solutions
+        </p>
       </div>
 
       {/* Services Grid */}
@@ -186,12 +274,12 @@ export default function ServicesDropdown() {
           >
             {/* Background Blur Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/5 to-blue-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            
+
             {/* Icon Container - Changed to white background to show colorful icons */}
             <div className="relative z-10 flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center group-hover:bg-white/90 transition-all duration-300 shadow-md group-hover:shadow-lg border border-gray-100">
               <ServiceIcon serviceId={service.id} className="w-7 h-7" />
             </div>
-            
+
             {/* Content */}
             <div className="relative z-10 flex-1 min-w-0">
               <span className="text-gray-800 font-semibold group-hover:text-indigo-700 transition-colors duration-300 block truncate">
@@ -201,13 +289,18 @@ export default function ServicesDropdown() {
                 <span className="text-xs text-gray-500 group-hover:text-indigo-500 transition-colors duration-300">
                   Explore service
                 </span>
-                <svg 
-                  className="w-3 h-3 ml-1 text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all duration-300" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-3 h-3 ml-1 text-gray-400 group-hover:text-indigo-500 group-hover:translate-x-1 transition-all duration-300"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </div>
             </div>
@@ -219,43 +312,54 @@ export default function ServicesDropdown() {
       <div className="relative rounded-2xl bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 p-8 text-white overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-            backgroundSize: '20px 20px'
-          }} />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
+              backgroundSize: "20px 20px",
+            }}
+          />
         </div>
-        
+
         {/* Animated Orb */}
         <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-xl animate-pulse" />
-        
+
         <div className="relative z-10">
           <div className="flex items-center justify-between">
             <div className="flex-1">
               <div className="flex items-center space-x-2 mb-3">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-ping" />
-                <span className="text-sm font-medium text-indigo-100">Featured Service</span>
+                <span className="text-sm font-medium text-indigo-100">
+                  Featured Service
+                </span>
               </div>
               <h3 className="text-2xl font-bold mb-3">
                 AI-Powered Transformation
               </h3>
               <p className="text-indigo-100 text-lg leading-relaxed max-w-2xl">
-                Revolutionize your business with our cutting-edge AI Solutions. 
-                Leverage intelligent automation to drive efficiency and innovation.
+                Revolutionize your business with our cutting-edge AI Solutions.
+                Leverage intelligent automation to drive efficiency and
+                innovation.
               </p>
             </div>
-            
+
             <Link
               to="/services/9"
               className="group relative flex-shrink-0 px-8 py-4 bg-white text-indigo-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-8 flex items-center"
             >
               <span className="relative z-10">Get Started</span>
-              <svg 
-                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </Link>
           </div>

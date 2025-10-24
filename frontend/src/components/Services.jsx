@@ -216,9 +216,7 @@ const Services = () => {
                 </svg>
               </a> */}
               <Link
-                to={`/services/${service.title
-                  .toLowerCase()
-                  .replace(/\s+/g, "-")}`}
+                to={`/services/${service.id}`}
                 className="text-indigo-600 font-medium hover:text-indigo-700 inline-flex items-center"
               >
                 Read more
