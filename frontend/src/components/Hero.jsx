@@ -5,12 +5,12 @@ const Hero = () => {
   // Image list
   const images = [
     "https://viso.ai/wp-content/uploads/2024/02/ASI-ANI-AGI-types-of-AI.jpg",
-    "https://t4.ftcdn.net/jpg/03/08/69/75/240_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzrdJ8uOj5T51mZdRGB-6H0QizVomAIUcfEw&s",
+    "https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg",
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNYXfvq-qig_enxzk4NbLfSozLStSfqDKsbg&s",
-    "https://media.licdn.com/dms/image/v2/D5612AQEopNky00HSKA/article-cover_image-shrink_720_1280/B56ZZ4HNwwHsAI-/0/1745771881203?e=2147483647&v=beta&t=xFDpwOJSHLAjMzeBZ19rLVjlhUDerWcOhMHEutS7NZQ",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAwRU8B1ABDnLW_GKJkZvSQj3eIndX4xmNeQ&s",
+    "https://images-ctf.baslerweb.com/dg51pdwahxgw/6DUrPe1CgaJhAION8iNUSP/ddb583f2a86808b6718e43fd78f43103/VC_Deep_Learning_Hero_3200x1800.webp?fm=webp&f=center&w=1920&q=60&fit=pad",
+    "https://media.licdn.com/dms/image/v2/D5612AQEopNky00HSKA/article-cover_image-shrink_600_2000/B56ZZ4HNwwHsAQ-/0/1745771881129?e=1762992000&v=beta&t=rdSjZIFr0s9y_LDnsTLaVPJzRo38D2bbi313ACBW4XQ",
+    "https://specials-images.forbesimg.com/dam/imageserve/1008906913/960x0.jpg?fit=scale",
+    "https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-2048x1366.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
