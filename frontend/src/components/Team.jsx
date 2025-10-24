@@ -8,68 +8,53 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Vikul Singhaniya",
-      role: "PhD, IIT Bombay",
+      name: "Rajiv Mishra",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
       rating: 5,
       quote: "The team's expertise and dedication exceeded all our expectations. They delivered exceptional results that transformed our business operations completely."
     },
     {
       id: 2,
-      name: "Shikha Sharma",
-      role: "M.Tech (KIET)",
+      name: "Naseem Babu",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80",
       rating: 5,
       quote: "Outstanding service and professional approach. They understood our requirements perfectly and delivered beyond what we imagined."
     },
     {
       id: 3,
-      name: "Deepak Kumar",
-      role: "B.Tech (AKTU)",
+      name: "Vijay Yadav",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
       rating: 4,
       quote: "Working with this team was a game-changer for our project. Their innovative solutions and timely delivery impressed us greatly."
     },
     {
       id: 4,
-      name: "Rajat Nirwal",
-      role: "B.Tech (AKTU)",
+      name: "Rigzin Angchuk",
       image: "https://images.unsplash.com/photo-1718209881014-83732ea8376d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
       rating: 5,
       quote: "Professional, reliable, and highly skilled. They delivered exactly what we needed with excellent attention to detail."
     },
     {
       id: 5,
-      name: "Arun Kumar",
-      role: "M.Tech (ABES)",
+      name: "Maggi Singhaniya",
       image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80",
       rating: 4,
       quote: "The quality of work and commitment to deadlines was remarkable. We're extremely satisfied with the results."
     },
     {
       id: 6,
-      name: "Kajol Kori",
-      role: "B.Tech (AKTU)",
+      name: "Shruti Bansiwal",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80",
       rating: 5,
       quote: "Exceptional team with great communication skills. They made the entire process smooth and stress-free for us."
     },
     {
       id: 7,
-      name: "Shikul",
-      role: "Robotics & Drone Expert",
+      name: "Priyanka Chauhan",
       image: "https://plus.unsplash.com/premium_photo-1663075992509-b3f0685ac291?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       rating: 5,
       quote: "Their technical expertise in cutting-edge technologies is impressive. They delivered innovative solutions that gave us a competitive edge."
-    },
-    {
-      id: 8,
-      name: "Shubarata Mohanty",
-      role: "AI/ML Specialist",
-      image: "https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?semt=ais_hybrid&w=740&q=80",
-      rating: 5,
-      quote: "Outstanding work in AI and machine learning. The team's deep knowledge and problem-solving skills are truly exceptional."
-    },
+    }
   ];
 
   // Star rating component
@@ -216,7 +201,6 @@ const Testimonials = () => {
                       <h3 className="text-lg font-semibold text-gray-900">
                         {testimonial.name}
                       </h3>
-                      <p className="text-indigo-600 text-sm">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
