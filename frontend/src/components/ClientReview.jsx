@@ -9,53 +9,68 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Rajiv Mishra",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+      image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
       rating: 5,
       quote: "The team's expertise and dedication exceeded all our expectations. They delivered exceptional results that transformed our business operations completely."
     },
     {
       id: 2,
       name: "Naseem Babu",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80",
+      image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
       rating: 5,
       quote: "Outstanding service and professional approach. They understood our requirements perfectly and delivered beyond what we imagined."
     },
     {
       id: 3,
       name: "Vijay Yadav",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+      image: "https://images.pexels.com/photos/997489/pexels-photo-997489.jpeg",
       rating: 4,
       quote: "Working with this team was a game-changer for our project. Their innovative solutions and timely delivery impressed us greatly."
     },
     {
       id: 4,
       name: "Rigzin Angchuk",
-      image: "https://images.unsplash.com/photo-1718209881014-83732ea8376d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVzaW5lc3MlMjBtYW58ZW58MHx8MHx8fDA%3D",
+      image: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
       rating: 5,
       quote: "Professional, reliable, and highly skilled. They delivered exactly what we needed with excellent attention to detail."
     },
     {
       id: 5,
       name: "Maggi Singhaniya",
-      image: "https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=798&q=80",
+      image: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
       rating: 4,
       quote: "The quality of work and commitment to deadlines was remarkable. We're extremely satisfied with the results."
     },
     {
       id: 6,
       name: "Shruti Bansiwal",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80",
+      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
       rating: 5,
       quote: "Exceptional team with great communication skills. They made the entire process smooth and stress-free for us."
     },
     {
       id: 7,
       name: "Priyanka Chauhan",
-      image: "https://plus.unsplash.com/premium_photo-1663075992509-b3f0685ac291?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
       rating: 5,
       quote: "Their technical expertise in cutting-edge technologies is impressive. They delivered innovative solutions that gave us a competitive edge."
     }
   ];
+
+  // Alternative human photos array for fallback
+  const alternativeHumanPhotos = [
+    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+    "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+    "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+    "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80",
+    "https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&h=200&q=80"
+  ];
+
+  // Function to get a random human photo for fallback
+  const getRandomHumanPhoto = () => {
+    const randomIndex = Math.floor(Math.random() * alternativeHumanPhotos.length);
+    return alternativeHumanPhotos[randomIndex];
+  };
 
   // Star rating component
   const StarRating = ({ rating }) => {
@@ -195,6 +210,10 @@ const Testimonials = () => {
                         src={testimonial.image}
                         alt={testimonial.name}
                         className="w-14 h-14 rounded-full object-cover border-2 border-indigo-100"
+                        onError={(e) => {
+                          // Fallback to random human photo if original fails
+                          e.target.src = getRandomHumanPhoto();
+                        }}
                       />
                     </div>
                     <div>
