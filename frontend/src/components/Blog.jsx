@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { blogPosts } from "./blogs";
+import { blogPosts } from "./Blogs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
