@@ -93,6 +93,8 @@ const Footer = () => {
         href="#"
         className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#1877F2] transition-all duration-300 transform hover:scale-110"
         aria-label="Visit our Facebook page"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg 
           className="w-5 h-5" 
@@ -105,9 +107,11 @@ const Footer = () => {
 
       {/* Twitter */}
       <a
-        href="#"
+        href="https://x.com/Code_Gemi"
         className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#1DA1F2] transition-all duration-300 transform hover:scale-110"
         aria-label="Follow us on Twitter"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg 
           className="w-5 h-5" 
@@ -120,9 +124,11 @@ const Footer = () => {
 
       {/* YouTube */}
       <a
-        href="#"
+        href="https://www.youtube.com/@CodeGemi"
         className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#FF0000] transition-all duration-300 transform hover:scale-110"
         aria-label="Subscribe to our YouTube channel"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg 
           className="w-5 h-5" 
@@ -135,9 +141,11 @@ const Footer = () => {
 
       {/* Instagram */}
       <a
-        href="#"
+        href="https://www.instagram.com/codegemi_technologies/"
         className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gradient-to-r hover:from-[#405DE6] hover:via-[#E1306C] hover:to-[#FFDC80] transition-all duration-300 transform hover:scale-110"
         aria-label="Follow us on Instagram"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg 
           className="w-5 h-5" 
@@ -150,9 +158,11 @@ const Footer = () => {
 
       {/* LinkedIn (Additional Professional Platform) */}
       <a
-        href="#"
+        href="https://www.linkedin.com/in/codegemi-technologies-304444390/"
         className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-[#0077B5] transition-all duration-300 transform hover:scale-110"
         aria-label="Connect with us on LinkedIn"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <svg 
           className="w-5 h-5" 
@@ -247,6 +257,8 @@ const Footer = () => {
                 <a
                   href="mailto:codegemi@gmail.com"
                   className="hover:text-blue-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   support@codegemi.com
                 </a>
@@ -287,6 +299,8 @@ const Footer = () => {
                 <a
                   href="tel:+918840531793"
                   className="hover:text-blue-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   +91 8840531793
                 </a>
