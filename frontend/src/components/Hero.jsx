@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import heroLogo from "../assets/img/hero/ai-impact-logo.png";
 
 const Hero = () => {
   // Image list
@@ -11,6 +12,7 @@ const Hero = () => {
     "https://media.licdn.com/dms/image/v2/D5612AQEopNky00HSKA/article-cover_image-shrink_600_2000/B56ZZ4HNwwHsAQ-/0/1745771881129?e=1762992000&v=beta&t=rdSjZIFr0s9y_LDnsTLaVPJzRo38D2bbi313ACBW4XQ",
     "https://specials-images.forbesimg.com/dam/imageserve/1008906913/960x0.jpg?fit=scale",
     "https://incubator.ucf.edu/wp-content/uploads/2023/07/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1-2048x1366.jpg",
+    heroLogo,
   ];
 
   const [currentImage, setCurrentImage] = useState(0);

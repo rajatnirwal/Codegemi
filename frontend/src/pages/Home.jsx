@@ -10,7 +10,7 @@ import Solution from "../components/Solution";
 import Phases from "../components/Phases";
 import Challenges from "../components/Challenges";
 import { assets } from "../assets/assets";
-import Team from "../components/Team";
+import Team from "../components/ClientReview";
 import ContactForm from "../components/ContactForm";
 import Blog from "../components/Blog";
 import VideoWithTransition from "../components/VideoWithTransition";

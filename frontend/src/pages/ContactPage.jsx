@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Play, Clock } from "lucide-react";
+import officeVideo from "../assets/img/video/CodeGemi-Company/Coddegemi office video.mp4";
 
 const ContactPage = () => {
   // Animation variants
@@ -120,6 +121,7 @@ const ContactPage = () => {
             </motion.div>
 
             {/* Right - Virtual Tour */}
+            {/* Right - Virtual Tour */}
             <motion.div
               variants={fadeIn}
               initial="hidden"
@@ -127,32 +129,20 @@ const ContactPage = () => {
               viewport={{ once: true }}
               className="relative rounded-2xl overflow-hidden shadow-xl group"
             >
-              <img
-                src="/assets/img/office-tour.jpg"
-                alt="Office tour preview"
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-              <a
-                href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white"
+              <video
+                src={officeVideo}
+                controls
+                className="w-full h-80 object-cover rounded-2xl"
               >
-                <motion.div className="relative" animate={pulse}>
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                      <Play size={32} className="text-indigo-600 ml-1" />
-                    </div>
-                  </div>
-                </motion.div>
-                <h3 className="text-xl font-semibold mt-4 text-center">
-                  Take a Virtual Office Tour
-                </h3>
-                <p className="text-gray-200 text-center mt-2">
-                  See where the magic happens
-                </p>
-              </a>
+                Your browser does not support the video tag.
+              </video>
+
+              <h3 className="text-xl font-semibold mt-4 text-center text-gray-800">
+                Take a Virtual Office Tour
+              </h3>
+              <p className="text-gray-500 text-center mt-2">
+                See where the magic happens
+              </p>
             </motion.div>
           </div>
         </div>

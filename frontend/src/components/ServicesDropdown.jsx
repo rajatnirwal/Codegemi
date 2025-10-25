@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-// ✅ Added slugs for each service
+// ✅ Services with slugs
 const services = [
   { id: 1, title: "Software Development", slug: "software-development" },
   { id: 2, title: "Application Development", slug: "application-development" },
@@ -148,7 +148,13 @@ const ServiceIcon = ({ serviceId, className = "w-6 h-6" }) => {
           strokeLinejoin="round"
         />
         <defs>
-          <linearGradient id="marketingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient
+            id="marketingGrad"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%"
+          >
             <stop offset="0%" stopColor="#F093FB" />
             <stop offset="100%" stopColor="#F5576C" />
           </linearGradient>
@@ -286,11 +292,9 @@ export default function ServicesDropdown() {
             className="group relative flex items-center space-x-4 p-4 rounded-xl bg-gradient-to-r from-white to-gray-50/80 hover:from-indigo-50 hover:to-blue-50 border border-gray-100 hover:border-indigo-200 transition-all duration-300 hover:scale-105 hover:shadow-lg"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/5 to-blue-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
             <div className="relative z-10 flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center group-hover:bg-white/90 transition-all duration-300 shadow-md group-hover:shadow-lg border border-gray-100">
               <ServiceIcon serviceId={service.id} className="w-7 h-7" />
             </div>
-
             <div className="relative z-10 flex-1 min-w-0">
               <span className="text-gray-800 font-semibold group-hover:text-indigo-700 transition-colors duration-300 block truncate">
                 {service.title}
@@ -329,9 +333,7 @@ export default function ServicesDropdown() {
             }}
           />
         </div>
-
         <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-xl animate-pulse" />
-
         <div className="relative z-10">
           <div className="flex items-center justify-between">
             <div className="flex-1">
@@ -350,7 +352,6 @@ export default function ServicesDropdown() {
                 innovation.
               </p>
             </div>
-
             <Link
               to="/services/ai-solutions"
               className="group relative flex-shrink-0 px-8 py-4 bg-white text-indigo-600 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 hover:scale-105 hover:shadow-2xl ml-8 flex items-center"
