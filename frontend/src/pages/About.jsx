@@ -144,7 +144,7 @@ const TeamSection = () => {
       role: "M.tech (IIT Patna, 2023),mathematics and computing",
       experience: "AI,ML,NLP,Deep learning",
       image:
-        "https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?semt=ais_hybrid&w=740&q=80",
+        "https://images.stockcake.com/public/2/5/b/25b212d6-d108-450a-b6d1-d497cbe9d1e2_large/handsome-man-portrait-stockcake.jpg",
     },
   ];
 
