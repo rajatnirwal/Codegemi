@@ -175,8 +175,8 @@ const Partners = () => {
           {/* Gradient fades for smooth edges (only when scrolling) */}
           {!isReducedMotion && (
             <>
-              <div className="absolute top-0 left-0 bottom-0 w-32 bg-gradient-to-r from-blue-50 to-transparent z-10"></div>
-              <div className="absolute top-0 right-0 bottom-0 w-32 bg-gradient-to-l from-purple-50 to-transparent z-10"></div>
+              {/* <div className="absolute top-0 left-0 bottom-0 w-32 bg-gradient-to-r from-blue-50 to-transparent z-10"></div> */}
+              {/* <div className="absolute top-0 right-0 bottom-0 w-32 bg-gradient-to-l from-purple-50 to-transparent z-10"></div> */}
             </>
           )}
         </div>
