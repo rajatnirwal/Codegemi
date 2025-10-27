@@ -163,7 +163,11 @@ const Navbar = () => {
         <div className="flex items-center z-60">
           <Link to="/" onClick={() => setActiveItem("home")}>
             <img
+<<<<<<< HEAD
               src={CodeGemiLogoGray}
+=======
+              src={assets.CodeGemiLogo}
+>>>>>>> origin/main
               alt="CodeGemi Logo"
               // className={`h-16 transition-all duration-500 ${
               //   scrolled ? "h-14" : "h-16"

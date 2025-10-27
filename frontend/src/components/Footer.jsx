@@ -214,7 +214,7 @@ const Footer = () => {
             <div>
               <p className="text-sm text-gray-500">Address</p>
               <h3 className="text-white text-lg font-medium">
-                Lane no.7, chipyana Buzurg, Gaziabad, Uttar Pradesh, india,
+                Lane no.7, chipyana Buzurg, ghaziabad, Uttar Pradesh, india,
                 201009
               </h3>
             </div>
@@ -320,6 +320,17 @@ const Footer = () => {
             } transition-all duration-700`}
             style={{ transitionDelay: "0.3s" }}
           >
+            {/* <div className="mb-6">
+              <Link
+                to="/"
+                className="text-2xl font-bold text-white flex items-center"
+              >
+                <span className="bg-blue-600 text-white p-2 rounded mr-2">
+                  CG
+                </span>
+                CodeGemi Technology
+              </Link>
+            </div> */}
             <div className="mb-6">
               <Link
                 to="/"
@@ -328,9 +339,10 @@ const Footer = () => {
                 <span className="bg-blue-600 text-white p-2 rounded mr-2">
                   CG
                 </span>
-                CodeGemi
+                CodeGemi Technologies
               </Link>
             </div>
+           
             <p className="mb-6 text-gray-400">
               CodeGemi IT is where technology meets precision - delivering
               ultricies aliquam volutpat and solutions that blend modern agility
