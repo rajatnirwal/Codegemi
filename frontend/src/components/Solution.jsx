@@ -128,7 +128,7 @@ const Solution = () => {
                 <div className="relative max-w-md">
                   <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-700">
                     <img
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                      src="https://t3.ftcdn.net/jpg/04/78/80/14/240_F_478801437_L6euBIK8dEm10QpPjb6DuehtLSJRSnBg.jpg"
                       alt="Business solutions"
                       className="w-full h-auto object-cover"
                     />

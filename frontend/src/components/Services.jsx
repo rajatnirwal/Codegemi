@@ -61,7 +61,7 @@ const Services = () => {
       slug: "graphic-design",
       description:
         "Graphic Design brings your brand to life through visual storytelling, creative concepts, and innovative designs that engage audiences.",
-      img: assets.GraphicDesign_HOMEPAGEICON,
+      img: "https://cdn-icons-png.flaticon.com/512/1185/1185316.png",
       color: "text-pink-600",
       bgColor: "bg-pink-100",
     },
@@ -81,7 +81,7 @@ const Services = () => {
       slug: "digital-marketing",
       description:
         "Digital Marketing accelerates your business growth by leveraging online channels, SEO strategies, and targeted campaigns.",
-      img: assets.DigitalMarketingservicespage,
+      img: "https://cdn-icons-png.flaticon.com/512/7978/7978338.png",
       color: "text-yellow-600",
       bgColor: "bg-yellow-100",
     },
@@ -101,7 +101,7 @@ const Services = () => {
       slug: "ai-solutions",
       description:
         "AI Solutions help organizations automate processes, improve decision-making, and unlock innovative opportunities with artificial intelligence.",
-      img: assets.AiSolutionservicepage,
+      img: "https://cdn-icons-png.freepik.com/256/12635/12635995.png?semt=ais_white_label",
       color: "text-gray-600",
       bgColor: "bg-gray-100",
     },
@@ -111,7 +111,7 @@ const Services = () => {
       slug: "data-science",
       description:
         "Data Science applies statistical methods, machine learning, and predictive analytics to extract valuable insights from data.",
-      img: assets.DataScienceservicepage,
+      img: "https://static.thenounproject.com/png/2198932-200.png",
       color: "text-blue-400",
       bgColor: "bg-blue-50",
     },
@@ -121,7 +121,7 @@ const Services = () => {
       slug: "robotics",
       description:
         "Robotics delivers intelligent automated solutions, enhancing operational efficiency, precision, and innovation across industries.",
-      img: assets.RoboticesServicepage,
+      img: "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
       color: "text-red-400",
       bgColor: "bg-red-50",
     },
@@ -131,7 +131,7 @@ const Services = () => {
       slug: "drone-technologies",
       description:
         "Drone Technologies revolutionize industries with aerial data, automation, and innovative applications for surveying, inspection, and delivery.",
-      img: "https://cdn-icons-png.flaticon.com/512/3594/3594573.png",
+      img: "https://cdn-icons-png.flaticon.com/512/588/588234.png",
       color: "text-green-400",
       bgColor: "bg-green-50",
     },

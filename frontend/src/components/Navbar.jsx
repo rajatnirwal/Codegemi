@@ -1,7 +1,8 @@
 // components/Navbar.js
 import React, { useState, useEffect, useRef } from "react";
 import { assets } from "../assets/assets";
-import ServicesDropdown from "./ServicesDropdown";
+//import ServicesDropdown from "./ServicesDropdown";
+import CodeGemiLogoGray from "../assets/img/CodeGemiLogoGray.png";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -162,10 +163,13 @@ const Navbar = () => {
         <div className="flex items-center z-60">
           <Link to="/" onClick={() => setActiveItem("home")}>
             <img
-              src={assets.CodeGemiLogofinal2}
+              src={CodeGemiLogoGray}
               alt="CodeGemi Logo"
-              className={`h-16 transition-all duration-500 ${
-                scrolled ? "h-14" : "h-16"
+              // className={`h-16 transition-all duration-500 ${
+              //   scrolled ? "h-14" : "h-16"
+              // }`}
+              className={`h-20 transition-all duration-500 ${
+                scrolled ? "h-20" : "h-24"
               }`}
             />
           </Link>
@@ -435,4 +439,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
