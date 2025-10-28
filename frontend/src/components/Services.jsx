@@ -13,7 +13,7 @@ const Services = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // ✅ Service data with SEO-friendly slugs
+  // ✅ Service data with SEO-friendly slugs - Using same icons as ServicesDropdown
   const services = [
     {
       id: 1,

@@ -173,80 +173,80 @@ const Services = () => {
   );
 };
 
-// ✅ Services data with slug field
+// ✅ Services data with same icons as other components
 const services = [
   {
     title: "Software Development",
     slug: "software-development",
-    icon: "https://cdn-icons-png.flaticon.com/512/1006/1006363.png",
+    icon: assets.SoftwareDevelopments_HOMEPAGEICON,
     description: "Custom software solutions tailored to your business needs.",
   },
   {
     title: "Application Development",
     slug: "application-development",
-    icon: "https://cdn-icons-png.flaticon.com/512/2920/2920244.png",
+    icon: assets.ApplicationDevelopments_HOMEPAGEICON,
     description: "Native and cross-platform mobile apps with intuitive UX/UI.",
   },
   {
     title: "RPA Workflow Automation",
     slug: "rpa-workflow-automation",
-    icon: "https://cdn-icons-png.flaticon.com/512/3144/3144456.png",
+    icon: assets.RPAICONServicePage,
     description: "Automate repetitive tasks to increase efficiency.",
   },
   {
     title: "Web Development",
     slug: "web-development",
-    icon: "https://cdn-icons-png.flaticon.com/512/1329/1329016.png",
+    icon: assets.WebDevelopments_HOMEPAGEICON,
     description:
       "Responsive modern websites that convert visitors into customers.",
   },
   {
     title: "Graphic Design",
     slug: "graphic-design",
-    icon: "https://cdn-icons-png.flaticon.com/512/4727/4727338.png",
+    icon: "https://cdn-icons-png.flaticon.com/512/1185/1185316.png",
     description:
       "Visually compelling designs that communicate your brand story.",
   },
   {
     title: "IT Management",
     slug: "it-management",
-    icon: "https://cdn-icons-png.flaticon.com/512/4325/4325005.png",
+    icon: assets.ITConsultingIcon,
     description: "Comprehensive IT infrastructure management and support.",
   },
   {
     title: "Digital Marketing",
     slug: "digital-marketing",
-    icon: "https://cdn-icons-png.flaticon.com/512/1055/1055662.png",
+    icon: "https://cdn-icons-png.flaticon.com/512/7978/7978338.png",
     description: "Data-driven strategies to grow your online presence.",
   },
   {
     title: "Data Analysis",
     slug: "data-analysis",
-    icon: "https://cdn-icons-png.flaticon.com/512/3594/3594435.png",
+    icon: assets.DataAnalyticsIcon,
     description: "Transform data into actionable insights for decisions.",
   },
   {
     title: "AI Solutions",
     slug: "ai-solutions",
-    icon: "https://cdn-icons-png.flaticon.com/512/2103/2103833.png",
+    icon: "https://cdn-icons-png.freepik.com/256/12635/12635995.png?semt=ais_white_label",
     description: "Intelligent AI systems to automate processes.",
   },
   {
     title: "Data Science",
     slug: "data-science",
-    icon: "https://cdn-icons-png.flaticon.com/512/3749/3749832.png",
+    icon: "https://static.thenounproject.com/png/2198932-200.png",
     description: "Analytics and machine learning to extract insights.",
   },
   {
     title: "Robotics",
     slug: "robotics",
-    icon: "https://cdn-icons-png.flaticon.com/512/3344/3344405.png",
+    icon: "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
     description: "Robotic solutions for industrial automation.",
   },
   {
     title: "Drone Technologies",
     slug: "drone-technologies",
-    icon: "https://cdn-icons-png.flaticon.com/512/3594/3594573.png",
+    icon: "https://cdn-icons-png.flaticon.com/512/588/588234.png",
     description: "Aerial imaging, surveying, and monitoring solutions.",
   },
 ];

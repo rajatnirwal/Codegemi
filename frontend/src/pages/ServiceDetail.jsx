@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import ServiceHero from "../components/ServiceHero";
 import { assets } from "../assets/assets";
 
-// Updated services data with slug field
+// Updated services data with same icons as ServicesDropdown and Services components
 const services = [
   {
     id: 1,
@@ -69,6 +69,7 @@ const services = [
   },
   {
     id: 4,
+    slug: "web-development",
     title: "Web Development",
     icon: assets.WebDevelopments_HOMEPAGEICON,
     image:
@@ -85,12 +86,12 @@ const services = [
       "Progressive Web Apps (PWA)",
       "Performance optimization",
     ],
-    slug: "web-development",
   },
   {
     id: 5,
+    slug: "graphic-design",
     title: "Graphic Design",
-    icon: assets.graphicdesignservicespage,
+    icon: "https://cdn-icons-png.flaticon.com/512/1185/1185316.png",
     image:
       "https://i.pinimg.com/1200x/bd/dd/2a/bddd2a086b0f4fedaf5fb5353aa70dd8.jpg",
     description:
@@ -105,10 +106,10 @@ const services = [
       "Print design",
       "Packaging design",
     ],
-    slug: "graphic-design",
   },
   {
     id: 6,
+    slug: "it-management",
     title: "IT Management",
     icon: assets.ITConsultingIcon,
     image:
@@ -125,12 +126,12 @@ const services = [
       "Disaster recovery planning",
       "IT strategy consulting",
     ],
-    slug: "it-management",
   },
   {
     id: 7,
+    slug: "digital-marketing",
     title: "Digital Marketing",
-    icon: assets.DigitalMarketingservicespage,
+    icon: "https://cdn-icons-png.flaticon.com/512/7978/7978338.png",
     image:
       "https://i.pinimg.com/736x/a5/da/25/a5da2594f7e7813aea7dffcbf17d108d.jpg",
     description:
@@ -145,10 +146,10 @@ const services = [
       "Content marketing strategy",
       "Analytics and performance tracking",
     ],
-    slug: "digital-marketing",
   },
   {
     id: 8,
+    slug: "data-analysis",
     title: "Data Analysis",
     icon: assets.DataAnalyticsIcon,
     image:
@@ -165,12 +166,12 @@ const services = [
       "KPI development and tracking",
       "Custom reporting solutions",
     ],
-    slug: "data-analysis",
   },
   {
     id: 9,
+    slug: "ai-solutions",
     title: "AI Solutions",
-    icon: assets.AiSolutionservicepage,
+    icon: "https://cdn-icons-png.freepik.com/256/12635/12635995.png?semt=ais_white_label",
     image:
       "https://i.pinimg.com/1200x/c4/e4/fa/c4e4fab939ab349fa4cd836b4b98e637.jpg",
     description:
@@ -185,12 +186,12 @@ const services = [
       "AI-powered chatbots and virtual assistants",
       "Custom AI algorithm development",
     ],
-    slug: "ai-solutions",
   },
   {
     id: 10,
+    slug: "data-science",
     title: "Data Science",
-    icon: assets.DataScienceservicepage,
+    icon: "https://static.thenounproject.com/png/2198932-200.png",
     image:
       "https://i.pinimg.com/1200x/ab/b5/33/abb533741bcd9b568b61308b20d49673.jpg",
     description:
@@ -205,12 +206,12 @@ const services = [
       "Data mining and pattern recognition",
       "Custom data science solutions",
     ],
-    slug: "data-science",
   },
   {
     id: 11,
+    slug: "robotics",
     title: "Robotics",
-    icon: assets.RoboticesServicepage,
+    icon: "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
     image:
       "https://i.pinimg.com/1200x/61/4c/10/614c100caaa658a27f4fc48d1087529b.jpg",
     description:
@@ -225,12 +226,12 @@ const services = [
       "Robotic vision systems",
       "Custom robotic solutions development",
     ],
-    slug: "robotics",
   },
   {
     id: 12,
+    slug: "drone-technologies",
     title: "Drone Technologies",
-    icon: "https://cdn-icons-png.flaticon.com/512/3594/3594573.png",
+    icon: "https://cdn-icons-png.flaticon.com/512/588/588234.png",
     image:
       "https://images.unsplash.com/photo-1473968512647-3e447244af8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     description:
@@ -245,9 +246,7 @@ const services = [
       "Search and rescue operations",
       "Custom drone application development",
     ],
-    slug: "drone-technologies",
   },
-  // Add the remaining services similarly with slug
 ];
 
 const ServiceDetail = () => {
