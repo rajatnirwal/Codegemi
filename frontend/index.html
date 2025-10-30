@@ -1,4 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ ADD THIS CSP META TAG -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="connect-src 'self' https://codegemi.onrender.com;
+                   default-src 'self';
+                   script-src 'self' 'unsafe-inline';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data: https:;
+                   font-src 'self' data:;"
+    />
+
+    <title>CodeGemi Technologies</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,4 +35,4 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-</html>
+</html> -->
