@@ -64,18 +64,33 @@ public class SecurityConfig {
     }
 
     // ✅ Proper CORS configuration
-    @Bean
-    public CorsFilter corsFilter() {
-        CorsConfiguration corsConfiguration = new CorsConfiguration();
-        corsConfiguration.setAllowCredentials(true);
-        corsConfiguration.addAllowedOrigin("http://localhost:5173");
-        corsConfiguration.addAllowedHeader("*");
-        corsConfiguration.addAllowedMethod("*");
+//     @Bean
+//     public CorsFilter corsFilter() {
+//         CorsConfiguration corsConfiguration = new CorsConfiguration();
+//         corsConfiguration.setAllowCredentials(true);
+//         corsConfiguration.addAllowedOrigin("http://localhost:5173");
+//         corsConfiguration.addAllowedHeader("*");
+//         corsConfiguration.addAllowedMethod("*");
 
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", corsConfiguration);
-        return new CorsFilter(source);
-    }
+//         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//         source.registerCorsConfiguration("/**", corsConfiguration);
+//         return new CorsFilter(source);
+//     }
+// }
+// ✅ EVEN BETTER - Use allowedOriginPatterns
+@Bean
+public CorsFilter corsFilter() {
+    CorsConfiguration corsConfiguration = new CorsConfiguration();
+    corsConfiguration.setAllowCredentials(true);
+    corsConfiguration.addAllowedOriginPattern("https://*.codegemi.com"); // ✅ All subdomains
+    corsConfiguration.addAllowedOriginPattern("http://*.codegemi.com");  // ✅ HTTP subdomains
+    corsConfiguration.addAllowedOrigin("http://localhost:5173");
+    corsConfiguration.addAllowedHeader("*");
+    corsConfiguration.addAllowedMethod("*");
+
+    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+    source.registerCorsConfiguration("/**", corsConfiguration);
+    return new CorsFilter(source);
 }
 
 // package com.itservices_backend.config;
