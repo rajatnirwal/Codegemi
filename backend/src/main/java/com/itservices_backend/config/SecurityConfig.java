@@ -92,6 +92,7 @@ public CorsFilter corsFilter() {
     source.registerCorsConfiguration("/**", corsConfiguration);
     return new CorsFilter(source);
 }
+}
 
 // package com.itservices_backend.config;
 
