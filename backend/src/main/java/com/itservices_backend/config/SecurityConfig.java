@@ -16,8 +16,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import java.util.Arrays;
-
 @Configuration
 public class SecurityConfig {
 
@@ -32,13 +30,13 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-            .cors(cors -> cors.configurationSource(corsConfigurationSource())) // ✅ FIXED: Proper CORS
-            .csrf(csrf -> csrf.disable())
+            .cors(cors -> {}) // ✅ enable CORS support
+            .csrf(csrf -> csrf.disable()) // ✅ disable CSRF for now
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/contact/**").permitAll()
+                .requestMatchers("/api/auth/**").permitAll()    // ✅ login/register APIs
+                .requestMatchers("/api/contact/**").permitAll() // ✅ allow contact form requests
                 .requestMatchers("/error").permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().authenticated()                   // ✅ everything else requires JWT
             )
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authenticationProvider(authenticationProvider())
@@ -65,25 +63,35 @@ public class SecurityConfig {
         return config.getAuthenticationManager();
     }
 
-    // ✅ PROPER CORS CONFIGURATION - FIXED
-    @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowCredentials(true);
-        configuration.setAllowedOriginPatterns(Arrays.asList(
-            "https://*.codegemi.com",
-            "http://*.codegemi.com",
-            "http://localhost:5173"
-        ));
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
-        configuration.setAllowedHeaders(Arrays.asList("*"));
-        configuration.setExposedHeaders(Arrays.asList("*"));
-        configuration.setMaxAge(3600L);
+    // ✅ Proper CORS configuration
+//     @Bean
+//     public CorsFilter corsFilter() {
+//         CorsConfiguration corsConfiguration = new CorsConfiguration();
+//         corsConfiguration.setAllowCredentials(true);
+//         corsConfiguration.addAllowedOrigin("http://localhost:5173");
+//         corsConfiguration.addAllowedHeader("*");
+//         corsConfiguration.addAllowedMethod("*");
 
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
-    }
+//         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//         source.registerCorsConfiguration("/**", corsConfiguration);
+//         return new CorsFilter(source);
+//     }
+// }
+// ✅ EVEN BETTER - Use allowedOriginPatterns
+@Bean
+public CorsFilter corsFilter() {
+    CorsConfiguration corsConfiguration = new CorsConfiguration();
+    corsConfiguration.setAllowCredentials(true);
+    corsConfiguration.addAllowedOriginPattern("https://*.codegemi.com"); // ✅ All subdomains
+    corsConfiguration.addAllowedOriginPattern("http://*.codegemi.com");  // ✅ HTTP subdomains
+    corsConfiguration.addAllowedOrigin("http://localhost:5173");
+    corsConfiguration.addAllowedHeader("*");
+    corsConfiguration.addAllowedMethod("*");
+
+    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+    source.registerCorsConfiguration("/**", corsConfiguration);
+    return new CorsFilter(source);
+}
 }
 
 // package com.itservices_backend.config;
