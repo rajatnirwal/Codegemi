@@ -5,16 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ✅ UPDATED CSP - Google Maps & Backend Both Allowed -->
+    <!-- ✅ SIMPLE CSP - Allow everything needed -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="connect-src 'self' https://codegemi.onrender.com https://www.google.com https://maps.googleapis.com https://*.google.com;
-                   default-src 'self';
-                   script-src 'self' 'unsafe-inline' https://maps.googleapis.com https://www.google.com https://*.google.com;
-                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://www.google.com;
-                   img-src 'self' data: https: https://maps.gstatic.com https://*.google.com https://*.googleapis.com;
-                   font-src 'self' data: https://fonts.gstatic.com;
-                   frame-src https://www.google.com https://*.google.com;"
+      content="default-src 'self' https://codegemi.onrender.com;
+                   connect-src *;
+                   script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                   img-src * data:;
+                   frame-src https://www.google.com;"
     />
 
     <title>CodeGemi Technologies</title>
