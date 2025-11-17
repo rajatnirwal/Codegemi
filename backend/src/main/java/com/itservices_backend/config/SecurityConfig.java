@@ -32,12 +32,20 @@ public class SecurityConfig {
         http
             .cors(cors -> {}) // ✅ enable CORS support
             .csrf(csrf -> csrf.disable()) // ✅ disable CSRF for now
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()    // ✅ login/register APIs
-                .requestMatchers("/api/contact/**").permitAll() // ✅ allow contact form requests
-                .requestMatchers("/error").permitAll()
-                .anyRequest().authenticated()                   // ✅ everything else requires JWT
-            )
+            // .authorizeHttpRequests(auth -> auth
+            //     .requestMatchers("/api/auth/**").permitAll()    // ✅ login/register APIs
+            //     .requestMatchers("/api/contact/**").permitAll() // ✅ allow contact form requests
+            //     .requestMatchers("/error").permitAll()
+            //     .anyRequest().authenticated()                   // ✅ everything else requires JWT
+            // ).authorizeHttpRequests(auth -> auth
+    // Public routes
+    .requestMatchers("/", "/home", "/index", "/error").permitAll()
+    .requestMatchers("/api/auth/**", "/api/contact/**").permitAll()
+    .requestMatchers("/css/**", "/js/**", "/images/**").permitAll() // static resources
+    
+    // Protected routes  
+    .anyRequest().authenticated()
+)
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authenticationProvider(authenticationProvider())
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
