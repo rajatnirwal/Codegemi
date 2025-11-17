@@ -27,31 +27,26 @@ public class SecurityConfig {
         this.userDetailsService = userDetailsService;
     }
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-            .cors(cors -> {}) // ✅ enable CORS support
-            .csrf(csrf -> csrf.disable()) // ✅ disable CSRF for now
-            // .authorizeHttpRequests(auth -> auth
-            //     .requestMatchers("/api/auth/**").permitAll()    // ✅ login/register APIs
-            //     .requestMatchers("/api/contact/**").permitAll() // ✅ allow contact form requests
-            //     .requestMatchers("/error").permitAll()
-            //     .anyRequest().authenticated()                   // ✅ everything else requires JWT
-            // ).authorizeHttpRequests(auth -> auth
-    // Public routes
-    .requestMatchers("/", "/home", "/index", "/error").permitAll()
-    .requestMatchers("/api/auth/**", "/api/contact/**").permitAll()
-    .requestMatchers("/css/**", "/js/**", "/images/**").permitAll() // static resources
-    
-    // Protected routes  
-    .anyRequest().authenticated()
-)
-            .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-            .authenticationProvider(authenticationProvider())
-            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+   @Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http
+        .cors(cors -> {}) // ✅ enable CORS support
+        .csrf(csrf -> csrf.disable()) // ✅ disable CSRF for now
+        .authorizeHttpRequests(auth -> auth
+            // Public routes
+            .requestMatchers("/", "/home", "/index", "/error").permitAll()
+            .requestMatchers("/api/auth/**", "/api/contact/**").permitAll()
+            .requestMatchers("/css/**", "/js/**", "/images/**").permitAll() // static resources
+            
+            // Protected routes  
+            .anyRequest().authenticated()
+        )
+        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+        .authenticationProvider(authenticationProvider())
+        .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
-        return http.build();
-    }
+    return http.build();
+}
 
     @Bean
     public AuthenticationProvider authenticationProvider() {
