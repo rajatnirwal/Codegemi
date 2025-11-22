@@ -42,9 +42,9 @@ const ContactForm = () => {
 
   const submitForm = async (formData) => {
     try {
-      // const response = await fetch("http://localhost:8080/api/contact/send", {
       const response = await fetch(
-        "https://codegemi.onrender.com/api/contact/send",
+        "http://localhost:8080/api/contact/send",
+
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

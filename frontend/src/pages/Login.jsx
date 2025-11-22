@@ -18,11 +18,8 @@ const LoginPage = () => {
     setSuccess(false);
 
     try {
-      // const response = await axios.post(
-      //   "http://localhost:8080/api/auth/login",
-      //   {
       const response = await axios.post(
-        "https://codegemi.onrender.com/api/auth/login",
+        "http://localhost:8080/api/auth/login",
         {
           username: email,
           password: password,
